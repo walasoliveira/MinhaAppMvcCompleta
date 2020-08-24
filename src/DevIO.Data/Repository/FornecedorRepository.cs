@@ -9,7 +9,7 @@ namespace DevIO.Data.Repository
 {
     public class FornecedorRepository : Repository<Fornecedor>, IFornecedorRepository
     {
-        protected FornecedorRepository(MeuDbContext context) : base(context)
+        public FornecedorRepository(MeuDbContext context) : base(context)
         {
 
         }
