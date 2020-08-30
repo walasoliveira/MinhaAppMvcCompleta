@@ -27,7 +27,6 @@ namespace DevIO.Data.Mappings
                 .WithOne(e => e.Fornecedor)
                 .HasForeignKey(p => p.FornecedorId);
 
-
             builder.ToTable("Fornecedores");
         }
     }
