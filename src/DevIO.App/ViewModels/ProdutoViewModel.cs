@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DevIO.App.ViewModels
 {
@@ -26,6 +27,7 @@ namespace DevIO.App.ViewModels
         public string Descricao { get; set; }
 
         [DisplayName("Imagem do Produto")]
+        [NotMapped]
         public IFormFile ImagemUpload { get; set; }
 
         public string Imagem { get; set; }

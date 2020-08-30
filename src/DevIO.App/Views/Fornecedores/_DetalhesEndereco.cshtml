@@ -65,7 +65,7 @@
                         @Html.DisplayFor(modelItem => modelItem.Endereco.FornecedorId)
                     </td>
                     <td>
-                        <a asp-action="AtualizarEndereco" asp-route-id="@Model.Id" data-toggle="modal" data-target="#myModal" data-modal="myModal" class="btn btn-info"><span title="Editar" class="fa fa-pencil-alt"></span></a>
+                        <a supress-by-action="Edit,ObterEndereco" asp-action="AtualizarEndereco" asp-route-id="@Model.Id" data-toggle="modal" data-target="#myModal" data-modal="myModal" class="btn btn-info"><span title="Editar" class="fa fa-pencil-alt"></span></a>
                     </td>
                 </tr>
             </tbody>
