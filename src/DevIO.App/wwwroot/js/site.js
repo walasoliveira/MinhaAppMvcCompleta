@@ -15,6 +15,8 @@
         var cep = $(this).val();
         buscaCep(cep);
     });
+
+    $("#msg_box").fadeOut(5000);
 });
 
 function ajaxModal() {

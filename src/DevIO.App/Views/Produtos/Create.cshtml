@@ -9,7 +9,7 @@
 <div class="row">
     <div class="col-md-10">
         <form asp-action="Create" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <vc:summary></vc:summary>
             <div class="form-group">
                 <label asp-for="FornecedorId" class="control-label"></label>
                 <select asp-for="FornecedorId" class="form-control" asp-items="@(new SelectList(Model.Fornecedores, "Id", "Nome"))">
