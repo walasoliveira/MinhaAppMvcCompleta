@@ -117,7 +117,7 @@ namespace DevIO.Business.Models.Validations.Documentos
         public DigitoVerificador ComMultiplicadoresDeAte(int primeiroMultiplicador, int ultimoMultiplicador)
         {
             _multiplicadores.Clear();
-            for (int i = primeiroMultiplicador; i < ultimoMultiplicador; i++)
+            for (int i = primeiroMultiplicador; i <= ultimoMultiplicador; i++)
                 _multiplicadores.Add(i);
 
             return this;
@@ -146,7 +146,7 @@ namespace DevIO.Business.Models.Validations.Documentos
         private string GetDigitSum()
         {
             var soma = 0;
-            for (int i = _numero.Length - 1, m = 0; i >= 0; i++)
+            for (int i = _numero.Length - 1, m = 0; i >= 0; i--)
             {
                 var produto = (int)char.GetNumericValue(_numero[i]) * _multiplicadores[m];
 
