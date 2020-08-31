@@ -91,7 +91,7 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             var number = cpfNumeros.Substring(0, TamanhoCnpj - 2);
             var digitoVerificador = new DigitoVerificador(number)
-                .ComMultiplicadoresDeAte(2, 11)
+                .ComMultiplicadoresDeAte(2, 9)
                 .Substituindo("0", 10, 11);
             var firstDigit = digitoVerificador.CalculaDigito();
             digitoVerificador.AddDigito(firstDigit);
